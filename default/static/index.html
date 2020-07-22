@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <link rel="stylesheet" type="text/css" href="static/spinner.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="static/charts.js"></script>
+  </head>
+
+  <body>
+    <div class="chart" id="hospitalizations_by_county">
+      <div class="param">
+	<input name="scale" value="lin" type="radio" checked
+	       onclick="chart.loadParams(); chart.refresh();"> Linear
+	<input name="scale" value="log" type="radio"
+	       onclick="chart.loadParams(); chart.refresh();"> Log10
+      </div>
+    </div>
+    <script>
+      var chart = new Chart(d3.select("div#hospitalizations_by_county"));
+     chart.load(d3.json('stats/hospitalization_by_county'));
+<!--       chart.load(d3.json('static/test_data.json')); -->
+    </script>
+  </body>
+</html>

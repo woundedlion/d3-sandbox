@@ -1,0 +1,50 @@
+div.chart {
+    font-family: sans-serif;
+    position: relative;
+    display: block;
+}
+
+rect.chart {
+    width: 100%;
+    heigh: 100%;
+    stroke: #dcdcdc;
+    fill: #fcfcfc;
+}
+
+div.param {
+    background: #dcdcdc;
+}
+
+svg.chart {
+    display: inline-block;
+}
+
+.axis {
+
+}
+
+.axis_grid {
+    opacity: 0.2;
+    stroke-width: 0.5px;
+    stroke-dasharray: 2 4;
+}
+
+.series {
+    
+}
+
+.line {
+    fill: none;
+    stroke-width: 1px;
+}
+
+.x_intercept {
+    stroke-width: 1px;
+    opacity: 0.5;
+    stroke: grey;
+}
+
+rect.legend {
+    fill: #eeeeee;
+}
+
